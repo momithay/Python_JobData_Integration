@@ -1,0 +1,32 @@
+,index,Id,ColumnName,Original,Modified,ErrorType,Fixing
+0,,,Company,N/A,non-specified,N/A,N/A values to non-specified 
+1,,,Company,-,non-specified,-,'-' values to non-specified 
+2,,,Company,Empty String,non-specified,nan,Empty String to non-specified 
+3,,,Company,nan,non-specified,Empty String,Empty String to non-specified 
+4,,,ContractType,N/A,non-specified,N/A,N/A values to non-specified 
+5,,,ContractType,nan,non-specified,-,'-' values to non-specified 
+6,,,ContractType,Empty String,non-specified,Empty String,Empty String to non-specified 
+7,,,ContractType,nan,non-specified,Empty String,Empty String to non-specified 
+8,,,ContractTime,N/A,non-specified,N/A,N/A values to non-specified 
+9,,,ContractTime,nan,non-specified,-,'-' values to non-specified 
+10,,,ContractTime,Empty String,non-specified,Empty String,Empty String to non-specified 
+11,,,ContractTime,nan,non-specified,Empty String,Empty String to non-specified 
+12,,,Salary, per Annum,0,Inconsistency,replace per Annum by .00 
+13,,,Salary,k,0,Inconsistency,replace K by 000 
+14,,,Salary,/Year,0,Inconsistency,replace /Year by 000 
+15,,,Salary, - ,To,Inconsistency,replacing ' - ' with ' To' 
+16,,,Salary,N/A,nan,null,dropped as the missing rate is under 5%
+17,,,Salary,nan,nan,null,dropped as the missing rate is under 5% 
+18,,,Salary,Nan,nan,null,dropped as the missing rate is under 5% 
+19,,,Salary,,nan,null,dropped as the missing rate is under 5% 
+20,,,Salary,0,nan,null,dropped as the missing rate is under 5% 
+21,,,Salary,10000000,didn't modify,outlier,less than 0.001% of the data volume 
+22,,,Salary,10000000,didn't modify,outlier,less than 0.001% of the data volume
+23,,,OpenDate,20122309T120000,20120923T120000,Wrong Order of month and day,replaced with right format
+24,All,All,OpenDate,20120408T120000,20121027T120000,27/10/12 12:00,replaced with right date-time format
+25,All,All,CloseDate,20130125T120000,25/1/13 12:00,no in date-time format,replaced with right date-time format
+26,,69019015,CloseDate,"2013-11-27 15:00:00,2013-08-29 15:00:00","2013-08-29 15:00:00,2013-11-27 15:00:00 ", Integrity Constraint Violation,replaced with right date-time format
+27,,69017444,CloseDate,"2013-01-25 15:00:00, 2012-12-26 15:00:00"," 2012-12-26 15:00:00,2013-01-25 15:00:00,", Integrity Constraint Violation,replaced with right date-time format
+28,,70758181,CloseDate,"2013-06-23 00:00:00, 2013-04-24 00:00:00","2013-04-24 00:00:00,2013-06-23 00:00:00,", Integrity Constraint Violation,replaced with right date-time format
+29,,71631621,CloseDate,"2013-07-09 15:00:00, 2013-05-10 15:00:00"," 2013-05-10 15:00:0,2013-07-09 15:00:00,", Integrity Constraint Violation,replaced with right date-time format
+30,,69010433,CloseDate,"2013-07-09 15:00:00,2012-03-30 12:00:00","2012-03-30 12:00:00,2013-07-09 15:00:00,", Integrity Constraint Violation0,replaced with right date-time format
