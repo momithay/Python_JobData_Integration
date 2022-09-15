@@ -5,6 +5,6 @@ Nowadays there are many job hunting websites including seek.com, Azuna.com, etc.
 In this project, we wrangle a large set of job advertisement records stored in xml format and with unknown data quality issues, to integrate the given data set with another data source, identify and resolve conflicts in data integration. 
 
 ### Tasks
-● In Task 1, we explore the first dataset, identify its format.
-● After successfully parsing the data, in Task 2, we explored the data further, identified and fixed data problems in the dataset, and finally output the clean data as per required format.
-● Then in Task 3, we integrate the cleaned dataset (the output from Task 2) and a 2nd dataset and resolved any schema level conflicts, merge the data, and then identify and fix any data-level conflicts that may exist.
+-In Task 1, we explore the first dataset, identify its format.
+- After successfully parsing the data, in Task 2, we explored the data further, identified and fixed data problems in the dataset, and finally output the clean data as per required format.
+- Then in Task 3, we integrate the cleaned dataset (the output from Task 2) and a 2nd dataset and resolved any schema level conflicts, merge the data, and then identify and fix any data-level conflicts that may exist.
